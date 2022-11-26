@@ -1,32 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { Card } from "./components/Card"
+import { Header } from "./components/Header"
+import {Footer} from './components/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <div className="App flex flex-col  min-h-screen w-auto  bg-gray-400 ">
+      <Header/>
+      <Card 
+      imagen={"https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=500&q=80"}
+      nombre={'Hamburguesa con queso'}
+      descripción={'Hamburguesa con queso y aderezos'}
+      precio={20}
+      calificacion={''}
+      reseñas={'Reseñas 36'}
+      width={300}
+      heigth={500}
+
+      />
+      <Card 
+      imagen={"https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=500&q=80"}
+      nombre={'Hamburguesa con queso'}
+      descripción={'Hamburguesa con queso y aderezos'}
+      precio={20}
+      calificacion={''}
+      reseñas={'Reseñas 36'}
+      width={300}
+      heigth={500}
+
+      />
+      <Footer/>
     </div>
   )
 }
