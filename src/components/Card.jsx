@@ -6,9 +6,9 @@ const Card = ({nombre,descripción,precio,calificacion,reseñas,imagen, width,he
 
   return (
     <div className={`w-[${width}] h-[${heigth}] mx-auto mt-4 md:w-1/2 md:flex `}>
-        <img className='w-[90%] mx-auto mt-2 rounded-lg md:rounded-none ' src={imagen} alt={nombre}/>
+        <img className='w-[90%] mx-auto mt-2 rounded-lg md:rounded-none md:w-48 md:rounded-l-md md:rounded-bl-md ' src={imagen} alt={nombre}/>
 
-        <div className={`relative w-[90%] h-auto mx-auto -mt-2 p-2 bg-white rounded-lg shadow-lg text-gray-900  md:mt-2 md:rounded-none`}>
+        <div className={`relative w-[90%] h-auto mx-auto -mt-2 p-2 bg-white rounded-lg shadow-lg text-gray-900  md:mt-2 md:rounded-none md:rounded-r-md md:rounded-br-md`}>
         <p 
         title='nombreProducto'
         className='text-xl uppercase tracking-tight font-semibold'>{nombre}</p>
