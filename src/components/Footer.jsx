@@ -1,9 +1,16 @@
 import React from 'react'
 import { Social } from './Social'
 
-const Footer = () => {
+const Footer = ({setToggle}) => {
+
+  const handleClick = () => {
+    setToggle(false)
+  };
+
   return (
-    <footer className='flex justify-between items-center w-full h-[130px] mt-3 bg-secondary text-white xl:pl-5'>
+    <footer className='flex justify-between items-center w-full h-[130px] mt-3 bg-secondary text-white xl:pl-5'
+    onClick={handleClick}
+    >
       <div className='flex w-1/2 sm:w-1/3'>
         <Social src={"https://cdn3.iconfinder.com/data/icons/social-media-2478/24/twiter-64.png"}
         alt={"Twitter"}
